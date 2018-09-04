@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
+import IntlTelInput from './component/IntlTelInput/index2'
 class App extends Component {
   componentWillMount() {
     NProgress.start();    // 页面开始加载时调用 start 方法
@@ -11,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        aaa
+        <IntlTelInput />
       </div>
     )
   }
