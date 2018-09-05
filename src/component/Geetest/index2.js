@@ -1,9 +1,9 @@
 /**
  * 极验
- * 方式：放入utils文件夹中
+ * 方式：npm install
  */
 import React, { Component } from 'react'
-import 'utils/geetest/gt.js';
+import 'geetest/demo/gt.js';
 import { initGeetest } from 'service/axios/module1.js'
 
 export default class Gtest extends Component {

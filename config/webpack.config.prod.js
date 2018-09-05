@@ -100,8 +100,6 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      nprogress: path.resolve(__dirname, '../node_modules/nprogress'),
-      intltelinput: path.resolve(__dirname, '../node_modules/intl-tel-input/build'),
       utils: path.resolve(__dirname, '../src/utils'),
       service: path.resolve(__dirname, '../src/service'),
       // @remove-on-eject-begin
