@@ -1,4 +1,7 @@
-// 方式一
+/**
+ * 方式一
+ * 选中的outline是浏览器默认样式，可以reset
+ */
 import React, { Component } from 'react';
 import 'intltelinput/js/intlTelInput.js';
 import 'intltelinput/css/intlTelInput.css';

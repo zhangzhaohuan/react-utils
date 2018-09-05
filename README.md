@@ -73,3 +73,12 @@ export default class IntlTelInput extends Component {
   }
 }
 ```
+### 极验 geetest
+* 方式一 npm install
+* 方式二  第三方库文件放入utils文件夹
+```
+  //流程：首先
+  import 'utils/geetest/gt.js';
+  //然后初始化
+   window.initGeetest({},()=>{}
+```

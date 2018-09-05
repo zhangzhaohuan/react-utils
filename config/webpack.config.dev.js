@@ -101,6 +101,7 @@ module.exports = {
       nprogress: path.resolve(__dirname, '../node_modules/nprogress'),
       intltelinput: path.resolve(__dirname, '../node_modules/intl-tel-input/build'),
       utils: path.resolve(__dirname, '../src/utils'),
+      service: path.resolve(__dirname, '../src/service'),
       // @remove-on-eject-begin
       // Resolve Babel runtime relative to react-scripts.
       // It usually still works on npm 3 without this but it would be
