@@ -77,3 +77,16 @@ export default class IntlTelInput extends Component {
   //然后初始化
    window.initGeetest({},()=>{}
 ```
+
+### tradding view 
+* 文档地址：https://zlq4863947.gitbooks.io/tradingview/content/
+* 使用
+  * public文件夹下添加 charting_library，并在index.html引入
+    ```
+  <script src="%PUBLIC_URL%/charting_library/charting_library.min.js"></script>
+
+    ``
+* 问题
+  * 开发环境使用正常，build后在nginx服务器下无法访问
+    * 解决：nginx location添加配置
+      * try_files $uri $uri/ /index.html;
