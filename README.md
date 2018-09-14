@@ -90,3 +90,4 @@ export default class IntlTelInput extends Component {
   * 开发环境使用正常，build后在nginx服务器下无法访问
     * 解决：nginx location添加配置
       * try_files $uri $uri/ /index.html;
+### react-loadable

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
-const Home =()=>(
+const Home = () => (
   <div>home</div>
 )
-  
+
 /** 进度条 */
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
@@ -17,6 +17,12 @@ import Geetest from './component/Geetest/index2.js'
 
 /**tradding view */
 import TraddingView from './component/TraddingView/index.js';
+
+/* react-loadable*/ 
+import ReactLoadable from './component/ReactLoadable'
+
+//样式
+import './App.css'
 
 class App extends Component {
   componentWillMount() {
@@ -31,9 +37,12 @@ class App extends Component {
       <div>
         <Router>
           <Switch>
+            <Route path='/react-loadable' component={ReactLoadable} />
             <Route path='/intl-tel-input' component={IntlTelInput} />
             <Route path='/geetest' component={Geetest} />
             <Route path='/tradding-view' component={TraddingView} />
+            <Route path='/' component={Home} />
+
           </Switch>
         </Router>
       </div>
