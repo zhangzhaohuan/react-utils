@@ -8,12 +8,14 @@ import 'intl-tel-input/build/css/intlTelInput.css';
 import $ from 'jquery';
 export default class IntlTelInput extends Component {
   componentDidMount() {
-    $("#phone").intlTelInput();
+    $("#phone").intlTelInput({
+      preferredCountries: ['cn'],
+    });
   }
   render() {
     return (
       <div>
-          <input type="text" id='phone' />
+        <input type="text" id='phone' />
       </div>
     )
   }

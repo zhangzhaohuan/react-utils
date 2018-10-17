@@ -10,7 +10,7 @@ export default class IntlTelInput extends Component {
   render() {
     return (
       <div>
-          <input type="text" id='phone' />
+        <input type="text" id='phone' />
       </div>
     )
   }
