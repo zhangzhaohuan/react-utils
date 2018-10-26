@@ -23,7 +23,7 @@ import Geetest from './component/Geetest/index2.js'
 import TraddingView from './component/TraddingView/index.js';
 
 /* react-loadable*/
-import ReactLoadable from './component/ReactLoadable'
+import ReactLoadable from './component/ReactLoadable';
 
 /* 美洽客服系统*/
 import CustomerService from './component/CustomerService'
@@ -36,7 +36,6 @@ class App extends Component {
     NProgress.start();    // 页面开始加载时调用 start 方法
   }
   componentDidMount() {
-
     console.log(chalk.red('Hello world!'));
     NProgress.done();  // 页面请求完毕时调用 done 方法
   }

@@ -11,7 +11,7 @@ export default function Example() {
   return (
     <div>
       <h1>Hello from a loadable component</h1>
-      <LoadableNested/>
+      <LoadableNested />
     </div>
   );
 }
