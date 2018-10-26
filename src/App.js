@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
-
+//chalk 颜色插件
+import chalk from 'chalk';
+chalk.enabled = true;
 // const Home = () => (
 //   <div>home</div>
 // )
-
 /*Home*/
 import Home from './component/Home'
 
@@ -35,6 +36,8 @@ class App extends Component {
     NProgress.start();    // 页面开始加载时调用 start 方法
   }
   componentDidMount() {
+
+    console.log(chalk.red('Hello world!'));
     NProgress.done();  // 页面请求完毕时调用 done 方法
   }
 
