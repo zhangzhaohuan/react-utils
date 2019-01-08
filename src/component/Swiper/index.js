@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class componentName extends Component {
+export default class Swiper extends Component {
   render() {
     return (
       <div>
-        {this.props.age}
+        Swiper
       </div>
     )
   }

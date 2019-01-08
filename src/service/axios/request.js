@@ -41,7 +41,7 @@ export async function request(method, url, params, opts) {
     case 'POST': config = Object.assign(config, { "data": params }); break;
     case 'PUT': config = Object.assign(config, { "data": params }); break;
     case 'DELETE': config = Object.assign(config, { "data": params }); break;
-    default:break;
+    default: break;
   }
   axios.interceptors.request.use(function (config) {
     //在请求发出之前进行一些操作
@@ -55,15 +55,9 @@ export async function request(method, url, params, opts) {
     return response;
   }, (err) => {
     const res = JSON.parse(JSON.stringify(err));
-    return res;
+    return res.response;
   });
-  try {
-    const res = await axios(config);
-    return res;
-  } catch (e) {
-    console.log(e);
-    return {};
-  }
+  return await axios(config);
 }
 
 /**

@@ -28,6 +28,24 @@ import ReactLoadable from './component/ReactLoadable';
 /* 美洽客服系统*/
 import CustomerService from './component/CustomerService'
 
+/** decimal.js */
+import Decimal from './component/Decimal'
+
+/** math */
+import MathDemo from './component/MathDemo'
+
+/**bignumber.js */
+import BigNumber from './component/BigNumber'
+
+/**swiper */
+import Swiper from './component/Swiper'
+
+/**moment.js */
+import Moment from './component/Moment'
+
+/**braft-editor */
+import BraftEditor from './component/BraftEditor';
+
 //样式
 import './App.css'
 
@@ -45,32 +63,18 @@ class App extends Component {
       <div>
         <Router>
           <div>
-            <ul>
-              <li>
-                <Link to='/react-loadable'>react-loadable</Link>
-              </li>
-              <li>
-                <Link to='/intl-tel-input'>intl-tel-input</Link>
-              </li>
-              <li>
-                <Link to='/geetest'>geetest</Link>
-              </li>
-              <li>
-                <Link to='/tradding-view'>tradding view</Link>
-              </li>
-              <li>
-                <Link to='/custom-service'>custom service</Link>
-              </li>
-              <li>
-                <Link to='/'>home</Link>
-              </li>
-            </ul>
             <Switch>
               <Route path='/react-loadable' component={ReactLoadable} />
               <Route path='/intl-tel-input' component={IntlTelInput} />
               <Route path='/geetest' component={Geetest} />
               <Route path='/tradding-view' component={TraddingView} />
               <Route path='/custom-service' component={CustomerService} />
+              <Route path='/decimal' component={Decimal} />
+              <Route path='/math' component={MathDemo} />
+              <Route path='/big-number' component={BigNumber} />
+              <Route path='/swiper' component={Swiper} />
+              <Route path='/moment' component={Moment} />
+              <Route path='/braft-editor' component={BraftEditor} />
               <Route path='/' component={Home} />
             </Switch>
           </div>
