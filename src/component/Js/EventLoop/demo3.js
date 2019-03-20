@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 
 export default class componentName extends Component {
@@ -21,6 +22,7 @@ export default class componentName extends Component {
 
 
     console.log('script end');
+
     return (
       <div>
 
@@ -28,4 +30,3 @@ export default class componentName extends Component {
     )
   }
 }
-

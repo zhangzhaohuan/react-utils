@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class componentName extends Component {
   render() {
-    console.log('script start')
+    console.log('script start');
     async function async1() {
       await async2();
       console.log('async1 end')
@@ -11,10 +11,15 @@ export default class componentName extends Component {
       console.log('async2 end')
     }
     async1()
-
+    setTimeout(function () {
+      console.log('setTimeout2');
+      Promise.resolve().then(function () {
+        console.log('setTimeout2-promise2');
+      });
+    }, 0);
     setTimeout(function () {
       console.log('setTimeout')
-    }, 0)
+    }, 0);
 
     new Promise(resolve => {
       console.log('Promise')
@@ -27,7 +32,7 @@ export default class componentName extends Component {
         console.log('promise2')
       })
 
-    console.log('script end')
+    console.log('script end');
     return (
       <div>
         EventLoop1
