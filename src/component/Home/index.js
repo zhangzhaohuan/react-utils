@@ -81,6 +81,18 @@ export default class Home extends Component {
             <Link to='/braft-editor'>braft-editor.js</Link>
           </li>
           <li>
+            <Link to='/video'>video.js</Link>
+          </li>
+          <li>
+            <Link to='/swiper'>swiper4</Link>
+          </li>
+          <li>
+            <Link to='/js'>js</Link>
+          </li>
+          <li>
+            <Link to='/boss'>boss</Link>
+          </li>
+          <li>
             <Link to='/'>home</Link>
           </li>
         </ul>

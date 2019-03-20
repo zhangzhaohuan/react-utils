@@ -1,0 +1,28 @@
+.box {
+  width: 100%;
+  min-width: 1244px; // background: red;
+}
+
+.swiper-container {
+  width: 500px;
+}
+
+.swiper-slide {
+  height: 400px;
+}
+
+.swiper-slide-1 {
+  background-color: red;
+}
+.swiper-slide-2 {
+  background-color: yellow;
+}
+.swiper-slide-3 {
+  background-color: green;
+}
+.swiper-pagination-bullet{
+  width: 20px;
+  height: 20px;
+  // border-radius: 0;
+  background-color:#ddd; 
+}

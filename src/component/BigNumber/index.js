@@ -21,9 +21,17 @@ export default class Index extends Component {
      * ROUND_HALF_UP 4 两边距离相同时，远离0: 1.25->1.3
     */
 
-    let x = new BigNumber(1.125);
+    let x = new BigNumber(1.124);
+    console.log(x.minus(new BigNumber(0.1)));
+    x.plus(2);
+    console.log(x.toNumber());
+
+    console.log(x > 2);
+    console.log(x < 2);
+
+
     // console.log(typeof x);
-    // console.log(x.decimalPlaces(2, 0).toString());
+    console.log(x.decimalPlaces(2, 0).toString());
     // console.log(x.decimalPlaces(2, 1).toString());
     // console.log(x.decimalPlaces(2, 4).toString());
 
@@ -35,15 +43,17 @@ export default class Index extends Component {
     // console.log(y.toFixed());
 
     /**format */
-    console.log(new BigNumber('1e-8').abs().toFixed(8));
-    console.log(new BigNumber('-0.0001').abs());  
+    console.log(new BigNumber('1e-9').abs().toFixed(8));
+    console.log(new BigNumber('-0.0001').abs());
     console.log(new BigNumber(0.2).isGreaterThanOrEqualTo('0.1'));
     var aa = new BigNumber('0.01');
-    var bb = new BigNumber('0.03');
+    var bb = new BigNumber('0.01');
     console.log(aa.comparedTo(bb));
+    console.log(bb.comparedTo(aa));
+
     console.log(bb.isGreaterThanOrEqualTo(aa));
-    
-    
+
+
     // comparedTo 
 
   }

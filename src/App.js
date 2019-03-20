@@ -46,6 +46,17 @@ import Moment from './component/Moment'
 /**braft-editor */
 import BraftEditor from './component/BraftEditor';
 
+/**video.js */
+import Video from './component/Video';
+
+/**js  */
+import Js from './component/Js';
+
+
+/**boss  */
+import Boss from './component/Boss';
+
+
 //样式
 import './App.css'
 
@@ -75,6 +86,10 @@ class App extends Component {
               <Route path='/swiper' component={Swiper} />
               <Route path='/moment' component={Moment} />
               <Route path='/braft-editor' component={BraftEditor} />
+              <Route path='/video' component={Video} />
+              <Route path='/swiper' component={Swiper} />
+              <Route path='/js' component={Js} />
+              <Route path='/boss' component={Boss} />
               <Route path='/' component={Home} />
             </Switch>
           </div>
