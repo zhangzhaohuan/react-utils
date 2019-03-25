@@ -95,6 +95,9 @@ export default class Home extends Component {
           <li>
             <Link to='/'>home</Link>
           </li>
+          <li>
+            <Link to='/eventEmitter'>EventEmitter</Link>
+          </li>
         </ul>
       </div>
     )

@@ -52,13 +52,14 @@ import Video from './component/Video';
 /**js  */
 import Js from './component/Js';
 
-
 /**boss  */
 import Boss from './component/Boss';
 
+import EventEmitterDemo from './component/EventEmitterDemo';
 
 //样式
 import './App.css'
+import { EventEmitter } from 'events';
 
 class App extends Component {
   componentWillMount() {
@@ -90,6 +91,7 @@ class App extends Component {
               <Route path='/swiper' component={Swiper} />
               <Route path='/js' component={Js} />
               <Route path='/boss' component={Boss} />
+              <Route path='/eventEmitter' component={EventEmitterDemo} />
               <Route path='/' component={Home} />
             </Switch>
           </div>
