@@ -8,7 +8,7 @@ export default class Index extends Component {
   render() {
     return (
       <div>
-        {/* <EventLoop1 /> */}
+        <EventLoop1 />
         {/* <Debounce /> */}
         {/* <Throttle /> */}
         <ES6 />

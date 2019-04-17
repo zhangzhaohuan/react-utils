@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Symbols from './symbol'
+import promise from './promise'
+
 export default class componentName extends Component {
   render() {
     // function foo({ x, y = 5 } = {}) {
@@ -24,7 +26,8 @@ export default class componentName extends Component {
 
     return (
       <div>
-        <Symbols />
+        {/* <Symbols /> */}
+        <Promise />
       </div>
     )
   }
