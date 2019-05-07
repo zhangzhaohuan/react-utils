@@ -1,0 +1,19 @@
+.transform-wrap svg {
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  margin: 100px;
+}
+#ant {
+  transform: rotate(25deg);
+}
+.transform {
+  position: absolute;
+  left: 160px;
+  top: 160px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  opacity: 0.3;
+  transform: rotate(25deg);
+}

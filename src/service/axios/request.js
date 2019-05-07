@@ -24,6 +24,8 @@ export async function request(method, url, params, opts) {
   opts = Object.assign({}, opts);
   params = Object.assign({}, params);
   const headers = Object.assign({}, HEADEERS, opts.headers);
+  console.log(headers);
+  
   const withCredentials = opts.withCredentials || WITH_CREDENTIALS;
   // if (opts.multipart) delete headers[CONTENT_TYPE];
   let query, config;

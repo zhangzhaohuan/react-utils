@@ -37,6 +37,7 @@
     "intl-tel-input": "^13.0.3",
     "jest": "20.0.4",
     "jquery": "^3.3.1",
+    "lottie-web": "^5.5.2",
     "moment": "^2.23.0",
     "nprogress": "^0.2.0",
     "object-assign": "4.1.1",

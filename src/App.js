@@ -57,6 +57,15 @@ import Boss from './component/Boss';
 
 import EventEmitterDemo from './component/EventEmitterDemo';
 
+/** lottie-web*/
+import LottieWeb from './component/LottieWeb';
+
+//AntdMenu
+import AntdMenu from './component/AntdMenu';
+
+//Svg
+import Svg from './component/Svg';
+
 //样式
 import './App.css'
 import { EventEmitter } from 'events';
@@ -92,6 +101,9 @@ class App extends Component {
               <Route path='/js' component={Js} />
               <Route path='/boss' component={Boss} />
               <Route path='/eventEmitter' component={EventEmitterDemo} />
+              <Route path='/lottie-web' component={LottieWeb} />
+              <Route path='/antd-menu' component={AntdMenu} />
+              <Route path='/svg' component={Svg} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
 import axios from 'axios';
+import './index.scss';
+
 const CancelToken = axios.CancelToken;
 const instance = axios.create({
   timeout: 2000,
@@ -39,6 +41,8 @@ export default class Home extends Component {
         console.log(err);
       })
     }, 300);
+
+    
   }
 
   componentWillUnmount() {
@@ -48,19 +52,19 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className='home-content'>
         <ul>
           <li>
-            <Link to='/react-loadable'>react-loadable</Link>
+            <Link to='/antd-menu'>/antd-menu</Link>
           </li>
           <li>
-            <Link to='/intl-tel-input'>intl-tel-input</Link>
+            <Link to='/big-number'>bignumber.js</Link>
           </li>
           <li>
-            <Link to='/geetest'>geetest</Link>
+            <Link to='/boss'>boss</Link>
           </li>
           <li>
-            <Link to='/tradding-view'>tradding view</Link>
+            <Link to='/braft-editor'>braft-editor.js</Link>
           </li>
           <li>
             <Link to='/custom-service'>custom service</Link>
@@ -69,34 +73,43 @@ export default class Home extends Component {
             <Link to='/decimal'>decimal.js</Link>
           </li>
           <li>
-            <Link to='/math'>math</Link>
+            <Link to='/eventEmitter'>EventEmitter</Link>
           </li>
           <li>
-            <Link to='/big-number'>bignumber.js</Link>
+            <Link to='/geetest'>geetest</Link>
           </li>
           <li>
-            <Link to='/moment'>moment.js</Link>
-          </li>
-          <li>
-            <Link to='/braft-editor'>braft-editor.js</Link>
-          </li>
-          <li>
-            <Link to='/video'>video.js</Link>
-          </li>
-          <li>
-            <Link to='/swiper'>swiper4</Link>
+            <Link to='/intl-tel-input'>intl-tel-input</Link>
           </li>
           <li>
             <Link to='/js'>js</Link>
           </li>
           <li>
-            <Link to='/boss'>boss</Link>
+            <Link to='/lottie-web'>LottieWeb</Link>
+          </li>
+          <li>
+            <Link to='/math'>math</Link>
+          </li>
+          <li>
+            <Link to='/moment'>moment.js</Link>
+          </li>
+          <li>
+            <Link to='/react-loadable'>react-loadable</Link>
+          </li>
+          <li>
+            <Link to='/svg'>svg</Link>
+          </li>
+          <li>
+            <Link to='/swiper'>swiper4</Link>
+          </li>
+          <li>
+            <Link to='/tradding-view'>tradding view</Link>
+          </li>
+          <li>
+            <Link to='/video'>video.js</Link>
           </li>
           <li>
             <Link to='/'>home</Link>
-          </li>
-          <li>
-            <Link to='/eventEmitter'>EventEmitter</Link>
           </li>
         </ul>
       </div>
