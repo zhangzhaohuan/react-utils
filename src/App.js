@@ -66,6 +66,15 @@ import AntdMenu from './component/AntdMenu';
 //Svg
 import Svg from './component/Svg';
 
+//SvgDemo
+import SvgDemo from './component/SvgDemo';
+
+//ClassDemo
+import ClassDemo from './component/ClassDemo/index.js'
+
+//wangeditor 
+import Wangeditor from './component/Wangeditor/index'
+
 //样式
 import './App.css'
 import { EventEmitter } from 'events';
@@ -104,6 +113,9 @@ class App extends Component {
               <Route path='/lottie-web' component={LottieWeb} />
               <Route path='/antd-menu' component={AntdMenu} />
               <Route path='/svg' component={Svg} />
+              <Route path='/svg-demo' component={SvgDemo} />
+              <Route path='/classDemo' component={ClassDemo} />
+              <Route path='/wangeditor' component={Wangeditor} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

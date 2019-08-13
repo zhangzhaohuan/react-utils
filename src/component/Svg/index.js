@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
 import SvgHome from './home';
+import SvgJs from './svgjs';
+import SvgResizeJs from './svgresize';
 import SvgAnimate from './animate';
 import Gradient from './gradient';
 import SvgEvent from './event';
@@ -15,6 +17,8 @@ export default class componentName extends Component {
             <div>
                 <Switch>
                     <Route path='/svg' exact component={SvgHome} />
+                    <Route path='/svg/svgjs' exact component={SvgJs} />
+                    <Route path='/svg/svg.resize.js' exact component={SvgResizeJs} />
                     <Route path='/svg/animate' exact component={SvgAnimate} />
                     <Route path='/svg/gradient' exact component={Gradient} />
                     <Route path='/svg/event' exact component={SvgEvent} />

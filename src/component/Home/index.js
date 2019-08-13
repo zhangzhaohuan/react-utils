@@ -100,6 +100,9 @@ export default class Home extends Component {
             <Link to='/svg'>svg</Link>
           </li>
           <li>
+            <Link to='/svg-demo'>svgDemo</Link>
+          </li>
+          <li>
             <Link to='/swiper'>swiper4</Link>
           </li>
           <li>
@@ -110,6 +113,9 @@ export default class Home extends Component {
           </li>
           <li>
             <Link to='/'>home</Link>
+          </li>
+          <li>
+            <Link to='/wangeditor'>wangeditor</Link>
           </li>
         </ul>
       </div>

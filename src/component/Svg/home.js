@@ -24,7 +24,12 @@ export default class componentName extends Component {
                     <li>
                         <Link to='/svg/event'>svg事件</Link>
                     </li>
-
+                    <li>
+                        <Link to='/svg/svgjs'>svg.js</Link>
+                    </li>
+                    <li>
+                        <Link to='/svg/svg.resize.js'>svg.resize.js</Link>
+                    </li>
                 </ul>
 
             </div>
