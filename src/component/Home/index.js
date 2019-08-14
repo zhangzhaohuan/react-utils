@@ -58,6 +58,9 @@ export default class Home extends Component {
             <Link to='/antd-menu'>/antd-menu</Link>
           </li>
           <li>
+            <Link to='/antd'>antd</Link>
+          </li>
+          <li>
             <Link to='/big-number'>bignumber.js</Link>
           </li>
           <li>

@@ -70,10 +70,13 @@ import Svg from './component/Svg';
 import SvgDemo from './component/SvgDemo';
 
 //ClassDemo
-import ClassDemo from './component/ClassDemo/index.js'
+import ClassDemo from './component/ClassDemo/index.js';
 
 //wangeditor 
-import Wangeditor from './component/Wangeditor/index'
+import Wangeditor from './component/Wangeditor/index';
+
+//antd
+import Antd from './component/Antd';
 
 //样式
 import './App.css'
@@ -111,11 +114,13 @@ class App extends Component {
               <Route path='/boss' component={Boss} />
               <Route path='/eventEmitter' component={EventEmitterDemo} />
               <Route path='/lottie-web' component={LottieWeb} />
-              <Route path='/antd-menu' component={AntdMenu} />
+              {/* <Route path='/antd-menu' component={AntdMenu} /> */}
               <Route path='/svg' component={Svg} />
               <Route path='/svg-demo' component={SvgDemo} />
               <Route path='/classDemo' component={ClassDemo} />
               <Route path='/wangeditor' component={Wangeditor} />
+              <Route path='/antd' component={Antd} />
+
               <Route path='/' component={Home} />
             </Switch>
           </div>
