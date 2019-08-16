@@ -121,6 +121,7 @@ export default class Home extends Component {
             <Link to='/wangeditor'>wangeditor</Link>
           </li>
         </ul>
+        <div>master</div>
       </div>
     )
   }
