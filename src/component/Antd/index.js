@@ -4,6 +4,8 @@ import Table from './Table/index';
 import Menu from './Menu/index';
 import Select from './Select/index';
 import Steps from './Steps/index';
+import AutoComplete from './AutoComplete/index';
+import Mentions from './Mentions/index';
 
 export default class Antd extends Component {
 
@@ -24,6 +26,9 @@ export default class Antd extends Component {
                     <li>
                         <Link to='/antd/steps'>/antd-steps</Link>
                     </li>
+                    <li>
+                        <Link to='/antd/autocomplete'>/antd-autocomplete</Link>
+                    </li>
                 </ul>
                 <div>
                     <Switch>
@@ -31,6 +36,8 @@ export default class Antd extends Component {
                         <Route path='/antd/menu' component={Menu} />
                         <Route path='/antd/select' component={Select} />
                         <Route path='/antd/steps' component={Steps} />
+                        <Route path='/antd/autocomplete' component={AutoComplete} />
+                        <Route path='/antd/mentions' component={Mentions} />                        
                     </Switch>
                 </div>
             </div>
