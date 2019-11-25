@@ -53,6 +53,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className='home-content'>
+        <img src={require('./login-bg.jpg')} />
         <ul>
           <li>
             <Link to='/antd-menu'>/antd-menu</Link>
@@ -80,6 +81,10 @@ export default class Home extends Component {
           </li>
           <li>
             <Link to='/geetest'>geetest</Link>
+          </li>
+          
+          <li>
+            <Link to='/immutable-js'>immutable-js</Link>
           </li>
           <li>
             <Link to='/intl-tel-input'>intl-tel-input</Link>

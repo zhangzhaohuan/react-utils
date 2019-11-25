@@ -78,6 +78,9 @@ import Wangeditor from './component/Wangeditor/index';
 //antd
 import Antd from './component/Antd';
 
+//immutable-JS
+import Immutable from './component/Immutable';
+
 //样式
 import './App.css'
 import { EventEmitter } from 'events';
@@ -105,7 +108,7 @@ class App extends Component {
               <Route path='/decimal' component={Decimal} />
               <Route path='/math' component={MathDemo} />
               <Route path='/big-number' component={BigNumber} />
-              <Route path='/swiper' component={Swiper} />
+              {/* <Route path='/swiper' component={Swiper} /> */}
               <Route path='/moment' component={Moment} />
               <Route path='/braft-editor' component={BraftEditor} />
               <Route path='/video' component={Video} />
@@ -120,7 +123,7 @@ class App extends Component {
               <Route path='/classDemo' component={ClassDemo} />
               <Route path='/wangeditor' component={Wangeditor} />
               <Route path='/antd' component={Antd} />
-
+              <Route path='/immutable-js' component={Immutable} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

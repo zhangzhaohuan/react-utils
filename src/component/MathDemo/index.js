@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { toNonExponential, decimalsStr } from 'utils/math/common.js'
 
 export default class componentName extends Component {
