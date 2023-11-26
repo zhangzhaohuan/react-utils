@@ -94,5 +94,3 @@ export default class IntlTelInput extends Component {
 
 
 
-
-test

@@ -81,6 +81,10 @@ import Antd from './component/Antd';
 //immutable-JS
 import Immutable from './component/Immutable';
 
+//interval
+
+import Interval from './component/Interval';
+
 //样式
 import './App.css'
 import { EventEmitter } from 'events';
@@ -124,6 +128,7 @@ class App extends Component {
               <Route path='/wangeditor' component={Wangeditor} />
               <Route path='/antd' component={Antd} />
               <Route path='/immutable-js' component={Immutable} />
+              <Route path='/interval' component={Interval} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

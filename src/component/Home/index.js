@@ -11,6 +11,10 @@ const instance = axios.create({
 export default class Home extends Component {
   constructor() {
     super();
+    this.state= {
+      show:false,
+      list:[],
+    }
     this.cancel1 = function () { };
     this.cancel2 = function () { };
   }
@@ -42,6 +46,12 @@ export default class Home extends Component {
       })
     }, 300);
 
+
+    setTimeout(function(){
+      that.setState({
+        list:[1,2]
+      })
+    },2000)
     
   }
 
@@ -125,8 +135,34 @@ export default class Home extends Component {
           <li>
             <Link to='/wangeditor'>wangeditor</Link>
           </li>
+          <li>
+            <Link to='/interval'>interval</Link>
+          </li>
         </ul>
         <div>feture_201908216_zzh</div>
+
+         <Child  list={this.state.list}/> 
+      </div>
+    )
+  }
+}
+
+
+
+
+class Child extends Component {
+  componentWillReceiveProps(){
+    console.log('componentWillReceiveProps');
+  }
+  componentDidMount(){
+    console.log('componentDidMount');
+  }
+  render() {
+    console.log('render');
+    console.log(this.props.list);
+    return (
+      <div>
+        child
       </div>
     )
   }
